@@ -2,7 +2,7 @@ body
 {
     position: absolute;
     margin: 0;
-    padding: 50% 10% 50% 10%;
+    padding: 0% 10% 100% 10%;
     font-family: calibri light;
     font-size: 120%;
     top: 0;
@@ -114,7 +114,8 @@ a.chapterlink:hover {
     color: black;
 }
 a.previous {
-    position: absolute;
+    position: static;
+    float: left;
     left: 180px;
     text-decoration: none;
     display: inline-block;
@@ -124,7 +125,8 @@ a.previous {
     border-radius: 50%;
 }
 a.next {
-    position: absolute;
+    position: static;
+    float: right;
     right: 200px;
     text-decoration: none;
     display: inline-block;
@@ -189,20 +191,9 @@ td.color {
     background-color: #E6E6FA;
     transition: 0.5s;
 }
-td.color.dark {
-    color: #fff;
-    background-color: #515151;
-    transition: 0.5s;
-}
 div {
     transition: 0.5s;
     transition-delay: -0.30s;
-}
-div.dark {
-    color: #fff;
-    background: #262626;
-    transition: 0.5s;
-    transition-delay: 0.30s;
 }
 img {
     max-width: 100%;
@@ -225,11 +216,6 @@ input[type=text], select, textarea {
     margin-bottom: 16px;
     resize: vertical;
 }
-textarea.dark {
-    color: #fff;
-    background-color: #262626;
-    transition: 0.5s;
-}
 button[type=submit] {
     background-color: gray;
     color: white;
@@ -238,27 +224,13 @@ button[type=submit] {
     border-radius: 4px;
     cursor: pointer;
 }
-
-button[type=submit]:hover.dark {
-    background-color: #2b2b2b;
-}
 button[type=submit]:hover {
     background-color: #515151;
-}
-input.dark {
-    color: #fff;
-    background-color: #262626;
-    transition: 0.5s;
 }
 .container {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
-}
-.container.dark {
-    color: #fff;
-    background-color: #515151;
-    transition: 0.5s;
 }
 #container {
     width:200px;

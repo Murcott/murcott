@@ -7,48 +7,8 @@
 </head>
 <body>
 <!--Based on W3Schools "How TO-Toggle/Swap Text" from <https://www.w3schools.com/howto/howto_js_toggle_text.asp> Date: 12/12/2018-->
-<script>
-  function myFunction() {
-    var h = document.getElementById("home");
-    var t = document.getElementById("toc");
-    var g = document.getElementById("glossary");
-    var c = document.getElementById("contact");
-    var l = document.getElementById("language");
-    var chapter = document.getElementById("title");
-    if (chapter.innerHTML === "Chapter 2 Part 2") {
-        chapter.innerHTML = "第二章下";
-    } else {
-        chapter.innerHTML = "Chapter 2 Part 2";
-    }
-    if (h.innerHTML === "Home") {
-        h.innerHTML = "首頁";
-    } else {
-        h.innerHTML = "Home";
-    }
-   if (t.innerHTML === "Table of Contents") {
-       t.innerHTML = "目錄";
-   } else {
-       t.innerHTML = "Table of Contents"
-   }
-   if (g.innerHTML === "Glossary") {
-        g.innerHTML = "字彙";
-    } else {
-        g.innerHTML = "Glossary";
-    }
-    if (c.innerHTML === "Contact") {
-        c.innerHTML = "回饋";
-    } else {
-        c.innerHTML = "Contact";
-    }
-    if (l.innerHTML === "中文") {
-        l.innerHTML = "EN";
-    } else {
-        l.innerHTML = "中文";
-    }
-}
-</script>
-<!--Based on W3Schools "CSS Grid Layout Module" from <https://www.w3schools.com/css/css_grid.asp> Date: 12/12/2018-->
-          <!--<div class="itemHead">Jump to:</div>-->
+
+  <!--<div class="itemHead">Jump to:</div>-->
         <div class="grid">    
             <div class="item">
             <a href="index.htm"  id="home">Home</a>
@@ -66,10 +26,10 @@
             <a href="contact.htm" id="contact">Contact</a>
             </div>
         </div>
-<button onclick="myFunction()" class="button" id="language">中文</button>
+
 <h2 id="title">Chapter 2 Part 2</h2>
 <!--Based on W3Schools "How TO-Next and Previous Buttons" from <https://www.w3schools.com/howto/howto_css_next_prev.asp> Date: 12/12/2018-->
-<a href="1_2.htm" class="chapterlink previous">&#8249;</a>
+<a href="2_1.htm" class="chapterlink previous">&#8249;</a>
 <a href="3_1.htm" class="chapterlink next">&#8250;</a>
 <br></br><br></br>
 Imperial Kitchen, Miao Man Xi.<br></br>
@@ -88,7 +48,7 @@ Lin Wu Niao’s felt as if there was a cat scratching her heart, she squatted do
 　　
 Miao Man Xi slightly leaned his head over, on the surface remaining calm and collected with not a word or movement, yet his voice was cold enough to freeze: “I recommend that Nobleman (Li) keep his door closed, you should admire your big cat by yourself, after all not everyone would appreciate such brutal pets.”<br></br>
 　　
-　　Nobleman Li face started to slightly flush with embarrassment, just as he was about to open his mouth to retort, he was interrupted by Miao Man Xi, “Fine, the competition this time will not have a subject, everyone can choose the dish they are most proficient at, there is only one condition, the food that they make, they must also contain their own feelings in it.”<br></br>
+Nobleman Li face started to slightly flush with embarrassment, just as he was about to open his mouth to retort, he was interrupted by Miao Man Xi, “Fine, the competition this time will not have a subject, everyone can choose the dish they are most proficient at, there is only one condition, the food that they make, they must also contain their own feelings in it.”<br></br>
 
 To put it briefly, in a sentence, the chef must put their emotion into their dish.<br></br>
 
@@ -109,28 +69,10 @@ At this moment on top of her head lay an oily and greasy poached egg, one half-c
 OK, she was able to save this fish and chicken egg.<br></br>
 </br>
 <!--Based on W3Schools "How TO-Next and Previous Buttons" from <https://www.w3schools.com/howto/howto_css_next_prev.asp> Date: 12/12/2018-->
-<a href="1_2.htm" class="chapterlink previous">&#8249;</a>
+<a href="2_1.htm" class="chapterlink previous">&#8249;</a>
 <a href="3_1.htm" class="chapterlink next">&#8250;</a>
-<!--Based on Online Tutorials "Day / Night Mode Switch Toggle Using Html CSS and Javascript - How To Create a Toggle Switch" from <https://www.youtube.com/watch?v=hy27lzmButc> Date: 12/12/2018-->
-<ul class="theme">
-    <li>
-        <span>Dark</span>
-        <span>Light</span>
-    </li>
-  </ul>
-  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function(){
-        $('ul.theme').click(function(){
-            $('ul.theme').toggleClass('active')
-            $('body').toggleClass('dark')
-            $('button').toggleClass('dark')
-            $('div').toggleClass('dark')
-            $('a').toggleClass('dark')
 
-        })
-    })
-  </script>
+
   <br></br>
 </body>
 </html>

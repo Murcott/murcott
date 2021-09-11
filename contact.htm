@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Contact</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<!--Based on W3Schools "How TO-Toggle/Swap Text" from <https://www.w3schools.com/howto/howto_js_toggle_text.asp> Date: 12/12/2018-->
+<script>
+ function myFunction() {
+    var h = document.getElementById("home");
+    var t = document.getElementById("toc");
+    var g = document.getElementById("glossary");
+    var c = document.getElementById("contact");
+    var l = document.getElementById("language");
+    var contact = document.getElementById("Contact");
+    var n = document.getElementById("name");
+    var e = document.getElementById("email");
+    var m = document.getElementById("message");
+    var s = document.getElementById("submit");
+    if (h.innerHTML === "Home") {
+        h.innerHTML = "首頁";
+    } else {
+        h.innerHTML = "Home";
+    }
+    if (t.innerHTML === "Table of Contents") {
+        t.innerHTML = "目錄";
+   } else {
+        t.innerHTML = "Table of Contents"
+   }
+    if (g.innerHTML === "Glossary") {
+        g.innerHTML = "字彙";
+        } else {
+        g.innerHTML = "Glossary";
+    }
+    if (c.innerHTML === "Contact") {
+        c.innerHTML = "回饋";
+    } else {
+        c.innerHTML = "Contact";
+    }
+    if (contact.innerHTML === "Contact") {
+        contact.innerHTML = "回饋";
+    } else {
+        contact.innerHTML = "Contact";
+    }
+    if (l.innerHTML === "中文") {
+        l.innerHTML = "EN";
+    } else {
+        l.innerHTML = "中文";
+    }
+    if (n.innerHTML === "Name") {
+        n.innerHTML = "名字";
+    } else {
+        n.innerHTML = "Name";
+    }
+    if (e.innerHTML === "Email") {
+        e.innerHTML = "電子郵件";
+    } else {
+        e.innerHTML = "Email";
+    }
+    if (m.innerHTML === "Message") {
+        m.innerHTML = "評論";
+    } else {
+        m.innerHTML = "Message";
+    }
+    if (s.innerHTML === "Submit") {
+        s.innerHTML = "提交";
+    } else {
+        s.innerHTML = "Submit";
+    }
+}
+</script>
+<!--Based on W3Schools "CSS Grid Layout Module" from <https://www.w3schools.com/css/css_grid.asp> Date: 12/12/2018-->
+  <!--<div class="itemHead">Anecdotes of a Lady Chef</div>-->
+        <div class="grid">
+          
+            <div class="item">
+            <a href="index.htm"  id="home">Home</a>
+            </div>
+          
+            <div class="item">
+            <a href="toc.htm" id="toc">Table of Contents</a>
+            </div>
+            
+            <div class="item">
+            <a href="glossary.htm" id="glossary">Glossary</a>
+            </div>
+            
+            <div class="item">
+            <a href="contact.htm" id="contact">Contact</a>
+            </div>
+  </div>
+    <button onclick="myFunction()" class="button" id="language">中文</button>
+<!--Based on W3Schools "How TO - Contact Form" from <https://www.w3schools.com/howto/howto_css_contact_form.asp> Date: 12/12/2018-->
+<h2 id="Contact">Contact</h2>
+<div class="container">
+  <form action="/action_page.php">
+    <label for="name" id="name">Name</label>
+    <input type="text" name="name">
+
+    <label for="email" id="email">Email</label>
+    <input type="text" name="email">
+
+    <label for="subject"  id="message">Message</label>
+    <textarea name="message"></textarea>
+
+    <button name="submit" type="submit" value="Submit" id="submit">Submit</button>
+  </form>
+</div>
+<!--Based on Online Tutorials "Day / Night Mode Switch Toggle Using Html CSS and Javascript - How To Create a Toggle Switch" from <https://www.youtube.com/watch?v=hy27lzmButc> Date: 12/12/2018-->
+<ul class="theme">
+    <li>
+        <span>Dark</span>
+        <span>Light</span>
+    </li>
+</ul>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+        $('ul.theme').click(function(){
+            $('ul.theme').toggleClass('active')
+            $('body').toggleClass('dark')
+            $('button').toggleClass('dark')
+            $('div').toggleClass('dark')
+            $('a').toggleClass('dark')
+            $('th.color').toggleClass('dark')
+            $('td.color').toggleClass('dark')
+            $('container').toggleClass('dark')
+            $('input').toggleClass('dark')
+            $('textarea').toggleClass('dark')
+        })
+    })
+  </script>
+</body>
+</html>

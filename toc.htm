@@ -6,47 +6,7 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<!--Based on W3Schools "How TO-Toggle/Swap Text" from <https://www.w3schools.com/howto/howto_js_toggle_text.asp> Date: 12/12/2018-->
-<script>
-  function myFunction() {
-    var h = document.getElementById("home");
-    var t = document.getElementById("toc");
-    var g = document.getElementById("glossary");
-    var c = document.getElementById("contact");
-    var l = document.getElementById("language");
-    var T = document.getElementById("TOC");
-    if (h.innerHTML === "Home") {
-        h.innerHTML = "首頁";
-    } else {
-        h.innerHTML = "Home";
-    }
-   if (t.innerHTML === "Table of Contents") {
-       t.innerHTML = "目錄";
-   } else {
-       t.innerHTML = "Table of Contents"
-   }
-   if (g.innerHTML === "Glossary") {
-        g.innerHTML = "字彙";
-    } else {
-        g.innerHTML = "Glossary";
-    }
-    if (c.innerHTML === "Contact") {
-        c.innerHTML = "回饋";
-    } else {
-        c.innerHTML = "Contact";
-    }
-    if (l.innerHTML === "中文") {
-        l.innerHTML = "EN";
-    } else {
-        l.innerHTML = "中文";
-    }
-    if (T.innerHTML === "Table of Contents") {
-        T.innerHTML = "目錄";
-    } else {
-        T.innerHTML = "Table of Contents";
-    }
-}
-</script>
+
 <!--Based on W3Schools "CSS Grid Layout Module" from <https://www.w3schools.com/css/css_grid.asp> Date: 12/12/2018-->
           <div class="grid">    
             <div class="item">
@@ -74,25 +34,6 @@
       <li><a href="2_2.htm">Chapter 2 Part 2</a></li>
       <li><a href="3_1.htm">Chapter 3 Part 1</a></li>
       </ul>
-<!--Based on Online Tutorials "Day / Night Mode Switch Toggle Using Html CSS and Javascript - How To Create a Toggle Switch" from <https://www.youtube.com/watch?v=hy27lzmButc> Date: 12/12/2018-->
-<ul class="theme">
-    <li>
-        <span>Dark</span>
-        <span>Light</span>
-    </li>
-  </ul>
-  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function(){
-        $('ul.theme').click(function(){
-            $('ul.theme').toggleClass('active')
-            $('body').toggleClass('dark')
-            $('button').toggleClass('dark')
-            $('div').toggleClass('dark')
-            $('a').toggleClass('dark')
 
-        })
-    })
-  </script>
 </body>
 </html>

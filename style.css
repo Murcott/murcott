@@ -160,6 +160,7 @@ a.next {
       justify-content: center;
     }
 .item {
+      border-radius: 15px;
       display: inline-block;
       background: #fff;
       text-align: center;

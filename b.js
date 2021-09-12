@@ -2,19 +2,19 @@ document.write(`
 
      <div class="grid">    
             <div class="item">
-            <a href="/index.htm"  id="home">Home</a>
+            <a href="/index.htm">Home</a>
             </div>
           
             <div class="item">
-            <a href="/toc.htm" id="toc">Table of Contents</a>
+            <a href="/toc.htm">Table of Contents</a>
             </div>
             
             <div class="item">
-            <a href="/glossary.htm" id="glossary">Glossary</a>
+            <a href="/glossary.htm">Glossary</a>
             </div>
             
             <div class="item">
-            <a href="/contact.htm" id="contact">Contact</a>
+            <a href="/contact.htm">Contact</a>
             </div>
         </div>
 

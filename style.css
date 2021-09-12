@@ -173,18 +173,13 @@ table, td, th {
 
 table {
     border-collapse: collapse;
-    width: 100%;
+    max-width: 100%;
 }
 th, td {
     padding: 15px;
 }
 th.color {
     background-color: #E6E6FA;
-    transition: 0.5s;
-}
-th.color.dark {
-    color: #fff;
-    background-color: #515151;
     transition: 0.5s;
 }
 td.color {

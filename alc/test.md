@@ -1,4 +1,6 @@
-{include file="../style.css"}
-<link rel=“stylesheet” type=“text/css” href=“../style.css”>
-<title> Test </title>
+---
+layout: post
+title: test post
+---
+
 # Test Heading

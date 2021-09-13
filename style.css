@@ -2,7 +2,7 @@ body
 {
     position: absolute;
     margin: 0;
-    padding: 0% 10% 100% 10%;
+    padding: 0% 10% 10% 10%;
     font-family: calibri light;
     font-size: 120%;
     top: 0;
@@ -116,7 +116,6 @@ a.chapterlink:hover {
 a.previous {
     position: static;
     float: left;
-    left: 180px;
     text-decoration: none;
     display: inline-block;
     padding: 8px 16px;
@@ -127,7 +126,6 @@ a.previous {
 a.next {
     position: static;
     float: right;
-    right: 200px;
     text-decoration: none;
     display: inline-block;
     padding: 8px 16px;

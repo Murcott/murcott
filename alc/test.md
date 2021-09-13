@@ -1,6 +1,7 @@
 ---
 layout: post
 title: test post
+url: "https://www.murcottt.com/alc/test.md"
 ---
 
 # Test Heading
